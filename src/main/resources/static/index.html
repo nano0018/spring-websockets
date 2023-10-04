@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <title>Spring websocket char application</title>
+        <link href="/css/style.css" rel="stylesheet">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Cabin:ital,wght@0,400;0,500;0,600;0,700;1,400&display=swap" rel="stylesheet">
+    </head>
+    <body class="gradient-background">
+    <noscript>
+        <h2>Enable Javascript to use this app!</h2>
+    </noscript>
+        <article id="login-container">
+            <section id="login-from-container">
+                <h1 class="title">Type your username to enter to the chatroom</h1>
+                <form id="user-login-form" name="user-login-form">
+                    <div class="input-container">
+                        <label for="name" class="input-label">Username:</label><input autocomplete="off" class="form-control" id="name" name="name" placeholder="Enter your username" type="text" >
+                    </div>
+                    <div class="input-container">
+                        <button type="submit" class="accent login-submit">Start chat!<i class="fa-solid fa-right-to-bracket icon-login"></i></button>
+                    </div>
+                </form>
+            </section>
+        </article>
+        <article id="chat-page-container" class="hidden">
+            <section id="chat-container">
+                <div class="container-header">
+                    <h2>Spring websocket Chat demo</h2>
+                </div>
+                <div class="loading-chat">
+                    <p>Connecting...</p>
+                </div>
+                <ul id="messages">
+
+                </ul>
+                <form id="message-form">
+                    <div class="form-group">
+                        <div class="input-group clearfix">
+                            <input type="text" id="message" placeholder="Type a message..." autocomplete="off" class="form-control"/>
+                            <button type="submit" class="primary">Send</button>
+                        </div>
+                    </div>
+                </form>
+            </section>
+        </article>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/sockjs-client/1.6.1/sockjs.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/stomp.js/2.3.3/stomp.min.js"></script>
+        <script src="https://kit.fontawesome.com/df9a1799f4.js" crossorigin="anonymous"></script>
+        <script src="/js/main.js"></script>
+    </body>
+</html>

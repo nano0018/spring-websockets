@@ -1,0 +1,111 @@
+:root {
+    --main-bg-color: #ECECEC;
+    --dark-color: #0c668e;
+    --middle-color: #5C9DC0;
+    --light-color: #A1C4D8;
+}
+
+body{
+    font-family: 'Cabin', sans-serif;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-position: center;
+    background-repeat: no-repeat;
+    overflow: hidden;
+}
+.gradient-background {
+    background: linear-gradient(85deg, var(--light-color), var(--middle-color), var(--dark-color));
+    background-size: 180% 180%;
+    animation: gradient-animation 6s ease infinite;
+}
+
+@keyframes gradient-animation {
+    0% {
+        background-position: 0% 50%;
+    }
+    50% {
+        background-position: 100% 50%;
+    }
+    100% {
+        background-position: 0% 50%;
+    }
+}
+
+.hidden {
+    display: none;
+}
+
+#login-container{
+    display: flex;
+    flex-direction: column;
+    background-color: var(--main-bg-color);
+    opacity: 0.85;
+    justify-content: center;
+    align-items: center;
+    padding: 1.5rem;
+    border-radius: 1rem;
+    box-shadow: 14px 10px 32px 0px var(--dark-color);
+}
+
+.input-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 1rem;
+}
+
+.input-container input {
+    font-size: medium;
+    color: var(--dark-color);
+}
+
+input[type="text"]:focus {
+    border: 2px solid var(--dark-color);
+}
+
+input[type="text"] {
+    width: 100%;
+    padding: 10px 10px;
+    margin: 8px 0;
+    box-sizing: border-box;
+    border: 2px solid var(--light-color);
+    border-radius: 0.5rem;
+    -webkit-transition: 0.5s;
+    transition: 0.5s;
+    outline: none;
+}
+
+.input-label {
+    text-align: center;
+    margin-right: 0.5rem;
+    font-size: large;
+    font-weight: bold;
+}
+
+.login-submit {
+    background-color: var(--light-color);
+    padding: 10px 10px;
+    width: 100%;
+    font-size: large;
+    color: aliceblue;
+    border: none;
+    border-radius: 0.5rem;
+}
+
+button:hover {
+    background-color: var(--dark-color);
+    transition: 0.5s;
+}
+
+button:active {
+    transition: 0.5s;
+    scale: 110%;
+}
+
+.icon-login {
+    margin-left: 1rem;
+}
+
