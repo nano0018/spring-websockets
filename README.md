@@ -1,4 +1,4 @@
-# Spring WebSocket Chat
+# Spring WebSocket Chat :envelope: :
 
 A simple WebSocket-based chat application built using the Spring Framework and Gradle.
 
@@ -9,8 +9,6 @@ A simple WebSocket-based chat application built using the Spring Framework and G
 - [Prerequisites](#prerequisites)
 - [Getting Started](#getting-started)
 - [Usage](#usage)
-- [Contributing](#contributing)
-- [License](#license)
 
 ## Introduction
 
