@@ -1,0 +1,9 @@
+version: '3.3'
+services:
+  demo-werbsockets:
+    image: demo-websockets
+    build:
+      context: .
+    container_name: demo-chat
+    ports:
+      - 8080:8080

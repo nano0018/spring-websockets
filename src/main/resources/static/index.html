@@ -2,7 +2,7 @@
 <html lang="en">
     <head>
         <meta charset="UTF-8">
-        <title>Spring websocket char application</title>
+        <title>Spring WebSocket chat application</title>
         <link href="/css/style.css" rel="stylesheet">
         <link rel="preconnect" href="https://fonts.googleapis.com">
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -12,7 +12,7 @@
     <noscript>
         <h2>Enable Javascript to use this app!</h2>
     </noscript>
-        <article id="login-container">
+        <article id="login-container" class="">
             <section id="login-from-container">
                 <h1 class="title">Type your username to enter to the chatroom</h1>
                 <form id="user-login-form" name="user-login-form">
@@ -25,10 +25,10 @@
                 </form>
             </section>
         </article>
-        <article id="chat-page-container" class="hidden">
+        <article id="chat-page-container" class="">
             <section id="chat-container">
                 <div class="container-header">
-                    <h2>Spring websocket Chat demo</h2>
+                    <h2>Spring WebSocket Chat: demo <i class="fa-regular fa-comment-dots"></i></h2>
                 </div>
                 <div class="loading-chat">
                     <p>Connecting...</p>
@@ -40,7 +40,7 @@
                     <div class="form-group">
                         <div class="input-group clearfix">
                             <input type="text" id="message" placeholder="Type a message..." autocomplete="off" class="form-control"/>
-                            <button type="submit" class="primary">Send</button>
+                            <button type="submit" class="primary"><i class="fa-solid fa-arrow-left"></i></button>
                         </div>
                     </div>
                 </form>
