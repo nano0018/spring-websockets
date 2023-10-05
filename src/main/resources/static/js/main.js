@@ -25,7 +25,6 @@ const getAvatarColor = (messageSender) => {
 
 const onMessageReceive = (payload) => {
     const message = JSON.parse(payload.body);
-    console.log(message);
 
     const messageElement = document.createElement('li');
 
